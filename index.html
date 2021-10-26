@@ -1,104 +1,114 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="UTF-8" />
-  <title>Frontend</title>
-</head>
-<body>
-  <table cellspacing="15">
-    <tr>
-      <td><img src="brin.jpg" width="200" alt="Тут моя фотка" /></td>
-      <td>
-        <h1>Aleksandr Valakh</h1>
-        <p>
-          <em>Я работник компании <strong>"Тандер"</strong></em>
-        </p>
-        <p>Я люблю путешевствовать, заниматься спортом и программировать</p>
-      </td>
-    </tr>
-  </table>
-  <!-- <img src="https://www.yuga.ru/media/14/d6/784_1164451210254312_807137843948445822__hgq2s1z.jpg" width="200" alt=""> -->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Frontend</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <img src="brin.jpg" alt="Тут моя фотка" class="avatar" />
+        <div class="info-text">
+          <h1>Aleksandr Valakh</h1>
+          <p>Я работник компании <strong>"Soft"</strong></p>
+          <p>Я люблю путешевствовать, заниматься спортом и программировать</p>
 
-  <hr />
+          <h4>Мои социальные сети</h4>
+          <a href="https://instagram.com/kick_ass" target="_blank">Instagram</a>
+          |
+          <a href="https://vkonakte/id78943" target="_blank">VK</a>
+          |
+          <a href="https://t.me/js_by_vladilen" target="_blank">Telegram</a>
+          |
+          <a href="https://github.com/sparki093/sparki093" target="_blank">
+            GitHab
+          </a>
+        </div>
+      </div>
 
-  <h2>Мои социальные сети</h2>
-  <ul type="circle">
-    <li>
-      <a href="https://instagram.com/kick_ass" target="_blank">Instagram</a>
-    </li>
-    <li><a href="https://vkonakte/id78943" target="_blank">VK</a></li>
-    <li><a href="https://t.me/js_by_vladilen" target="_blank">Telegram</a></li>
-    <li>
-      <a href="https://github.com/sparki093/sparki093" target="_blank"
-        >GitHab</a
-      >
-    </li>
-  </ul>
+      <!-- <img src="https://www.yuga.ru/media/14/d6/784_1164451210254312_807137843948445822__hgq2s1z.jpg" width="200" alt=""> -->
 
-  <hr />
+      <div class="card bg-yellow">
+        <h2>Мои хобби</h2>
+        <ol class="list">
+          <li>Спорт: бег, гонки на велосипеде</li>
+          <li>Программирование</li>
+          <li>Скоростная езда</li>
+          <li>Кино</li>
+        </ol>
+      </div>
 
-  <h2>Мои хобби</h2>
-  <ol type="1">
-    <li>Спорт: бег, гонки на велосипеде</li>
-    <li>Программирование</li>
-    <li>Скоростная езда</li>
-    <li>Кино</li>
-  </ol>
+      <div class="card bg-green">
+        <h2>Опыт работы</h2>
+        <table class="table">
+          <tr>
+            <td>URGpU(NPI)</td>
+            <td>Ingeener</td>
+            <td>2017-2018</td>
+          </tr>
+          <tr>
+            <td>Tander</td>
+            <td>Specialist support</td>
+            <td>2019-2021</td>
+          </tr>
+          <tr>
+            <td>Youtube</td>
+            <td>Frontend</td>
+            <td>2015-2016</td>
+          </tr>
+          <tr>
+            <td>Backetnd-prof</td>
+            <td>Backend</td>
+            <td>2014-2015</td>
+          </tr>
+        </table>
+      </div>
 
-  <hr />
+      <div class="card bg-red">
+        <h2>Youtube Курсы</h2>
 
-  
+        <ul class="link-list">
+          <li>
+            <a href="https://www.youtube.com">Youtube</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=nq9dcMzaqYk">AUDI</a>
+          </li>
+        </ul>
+      </div>
 
-  <h2>Опыт работы</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>URGpU(NPI)</td>
-        <td>Ingeener</td>
-        <td>2017-2018</td>
-      </tr>
-      <tr>
-        <td>Tander</td>
-        <td>Specialist support</td>
-        <td>2019-2021</td>
-      </tr>
-    </tbody>
-  </table>
+      <div class="contact">
+        <h2>Связаться со мной</h2>
+        <form action="/">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" placeholder="Ввелите ваше имя" />
+            </div>
 
-  <hr />
+            <div class="form-group">
+              <label for="email">Ваш Email:</label>
+              <input type="email" id="email" placeholder="Введите Email" />
+            </div>
+          </div>
 
-  <h2>Youtube Курсы</h2>
+          <div class="form-group">
+            <label for="text">Ваше сообщение:</label>
 
-  <a href="youtube.html">посмотреть кнопочку</a>
+            <textarea id="text" rows="2" cols="15"></textarea>
+          </div>
 
-  <hr />
-  <h2>Связаться со мной</h2>
-  <form action="/">
-    <label for="name">Ваше имя</label>
-    <input type="text" id="name" placeholder="Ввелите ваше имя" />
-    
-    <br />
-    <br>
-    
-    <label for="email">Ваш Email:</label>
-    <input type="email" id="email" placeholder="Введите Email" />
+          <input class="btn" type="submit" value="Связаться" />
+        </form>
 
-    <br>
-    <br>
+        <div class="position">
+            <div class="box"></div>
+        </div>
 
-    <label for="text">Ваше сообщение:</label>
-    <br>
-    <textarea id="text" rows="2" cols="15"></textarea>
+      </div>
 
-    <br />
-    <input type="submit" value="Связаться" />
-  </form>
+      
 
-  <hr />
-</body>
+    </div>
+  </body>
+</html>
